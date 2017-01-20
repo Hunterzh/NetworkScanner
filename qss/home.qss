@@ -1,0 +1,83 @@
+/*********************QToolButton******************/
+QToolButton#addBtn
+{
+    border-image: url(:/image/home/add_grey.png);
+}
+QToolButton#addBtn:hover
+{
+    border-image: url(:/image/home/add_white.png);
+}
+
+QToolButton#alarmBtn
+{
+    border-image: url(:/image/home/alarm_grey.png);
+}
+QToolButton#alarmBtn:hover
+{
+    border-image: url(:/image/home/alarm_white.png);
+}
+
+QToolButton#settingBtn
+{
+    border-image: url(:/image/home/set_grey.png);
+}
+QToolButton#settingBtn:hover
+{
+    border-image: url(:/image/home/set_white.png);
+}
+
+QToolButton#singleBtn
+{
+    border-image: url(:/image/home/single_break_grey.png);
+}
+QToolButton#singleBtn:hover
+{
+    border-image: url(:/image/home/single_break_white.png);
+}
+
+QToolButton#doubleBtn
+{
+    border-image: url(:/image/home/double_break_grey.png);
+}
+QToolButton#doubleBtn:hover
+{
+    border-image: url(:/image/home/double_break_white.png);
+}
+
+QToolButton#intoBtn
+{
+    border-image: url(:/image/home/Inbox_Into_grey.png);
+}
+QToolButton#intoBtn:hover
+{
+    border-image: url(:/image/home/Inbox_Into_white.png);
+}
+/*********************QWidget******************/
+QWidget#alarmWidget,#deviceWidget,#settingWidget,#alarmInfoWidget{
+    background-color:rgba(44, 47, 57, 100%);
+    border-radius: 5px;
+}
+
+QWidget#alarmWidget:hover{
+    background-color:rgba(52, 56, 65, 100%);
+    border-radius: 5px;
+}
+QWidget#deviceWidget:hover{
+    background-color:rgba(52, 56, 65, 100%);
+    border-radius: 5px;
+}
+QWidget#settingWidget:hover{
+    background-color:rgba(52, 56, 65, 100%);
+    border-radius: 5px;
+}
+QWidget#alarmInfoWidget:hover{
+    background-color:rgba(52, 56, 65, 100%);
+    border-radius: 5px;
+}
+
+/*********************QLabel******************/
+QLabel {
+        color:rgb(132, 133, 135);
+        font: 75 10pt "Verdana";
+
+}

@@ -1,0 +1,4 @@
+QToolButton#closeBtn:hover
+{
+background-color: rgb(232, 78, 64);
+}

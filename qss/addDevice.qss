@@ -1,0 +1,105 @@
+/*********************QWidget******************/
+QWidget {
+    background-color: rgb(44,47,57);
+}
+
+/*********************QToolButton******************/
+QToolButton#closeBtn:hover
+{
+background-color: rgb(232, 78, 64);
+}
+
+/*********************QPushBtton******************/
+QPushButton {
+    background-color: rgb(70,160,190);
+    border-radius: 3px;
+    color:rgb(255, 255, 255);
+    font: 75 10pt "Verdana";
+    border: none;
+}
+QPushButton:hover
+{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 rgb(78,185,208), stop: 1 rgb(78,185,208));
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 rgb(49,84,97), stop: 1 rgb(49,84,97));
+}
+
+
+/*********************QLabel******************/
+QLabel {
+        color:rgb(255, 255, 255);
+        font: 100 10pt "Verdana";
+}
+
+/*********************QLineEdit******************/
+
+QLineEdit{
+    border: 2px solid #4EB9D0;
+    border-radius: 1px;
+    background-color: rgb(35,39,49);
+    color:rgb(255, 255, 255);
+    font: 75 9pt "Verdana";
+}
+
+/*********************QComboBox******************/
+QComboBox {
+        color:rgb(255, 255, 255);
+        font: 100 11pt "Verdana";
+}
+
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+/*********************QTabWidget******************/
+QTabBar::tab {
+
+    border: 2px solid rgb(75,185,208);
+    border-bottom-color: rgb(75,185,208); /* same as the pane color */
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    min-width: 8ex;
+    padding: 2px;
+    color:rgb(255, 255, 255);
+}
+
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 rgb(49,84,97), stop: 1 rgb(49,84,97));
+}
+
+QTabBar::tab:selected {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 rgb(78,185,208), stop: 1 rgb(78,185,208));
+
+
+}
+QTabBar::tab:!selected {
+    margin-top: 4px; /* make non-selected tabs look smaller */
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid rgb(78,185,208);
+    position: absolute;
+    top: -0.1em;
+}
+
+/*********************QSPinBox******************/
+QSpinBox {
+    border: 2px solid #4EB9D0;
+    border-radius: 1px;
+    background-color: rgb(35,39,49);
+    color:rgb(255, 255, 255);
+    font: 75 9pt "Verdana";
+}
+

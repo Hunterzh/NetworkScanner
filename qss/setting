@@ -1,0 +1,36 @@
+/*********************QPushBtton******************/
+QPushButton {
+    background-color: rgb(70,160,190);
+    border-radius: 3px;
+    color:rgb(255, 255, 255);
+    font: 75 10pt "Verdana";
+    border: none;
+}
+QPushButton:hover
+{
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 rgb(78,185,208), stop: 1 rgb(78,185,208));
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 rgb(49,84,97), stop: 1 rgb(49,84,97));
+}
+
+
+/*********************QLabel******************/
+QLabel {
+        color:rgb(255, 255, 255);
+        background-color: rgb(35,39,49);
+        font: 100 10pt "Verdana";
+}
+
+/*********************QLineEdit******************/
+
+QLineEdit{
+    border: 2px solid rgb(35,39,49);
+    border-radius: 1px;
+    background-color: rgb(35,39,49);
+    color:rgb(255, 255, 255);
+    font: 75 9pt "Verdana";
+}

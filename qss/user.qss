@@ -1,0 +1,40 @@
+
+/*********************QToolButton******************/
+QToolButton
+{
+    font: 75 8pt "Verdana";
+}
+
+QToolButton#userCloseBtn:hover
+{
+background-color: rgb(232, 78, 64);
+}
+
+QToolButton#userMizeBtn:hover
+{
+background-color: rgba(132, 133, 135, 70%);
+}
+
+QToolButton#userMiniBtn:hover
+{
+background-color: rgba(132, 133, 135, 70%);
+}
+
+QToolButton:hover
+{
+color:rgb(255, 255, 255);
+background: transparent;
+border: none;
+}
+
+QToolButton:pressed
+{
+color:rgb(255, 255, 0);
+}
+
+/*********************QMainWindow******************/
+QMainWindow
+{
+background-color: rgb(35,39,49);
+}
+

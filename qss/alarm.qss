@@ -1,0 +1,117 @@
+/*********************QTableWidget******************/
+QTableWidget {
+    background-color: rgb(35,39,49);
+    gridline-color: rgb(255,255,255);
+}
+
+QTableWidget::item {
+    background-color: rgb(35,39,49);
+    color:rgb(255, 255, 255);
+    font: 75 10pt "Verdana";
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: rgb(35,39,49);
+    border: 1px solid rgb(255,255,255);
+}
+
+/*********************QHeaderView******************/
+QHeaderView::section {
+    background-color: rgb(255,255,255);
+    padding: 4px;
+    font-size: 10pt;
+    border-style: none;
+    border-bottom: 1px solid rgb(255,255,255);
+    border-right: 1px solid rgb(255,255,255);
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid rgb(255,255,255);
+    background-color: rgb(35,39,49);
+    color:rgb(255, 255, 255);
+    font: 75 10pt "Verdana";
+    gridline-color: rgb(255,255,255);
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid rgb(255,255,255);
+    background-color: rgb(35,39,49);
+    color:rgb(255, 255, 255);
+    font: 75 10pt "Verdana";
+    gridline-color: rgb(255,255,255);
+}
+
+/*********************QScrollBar_horizontal******************/
+QScrollBar:horizontal
+{
+    height:20px;
+    background:rgba(255,255,255,30%);
+    margin:0px,0px,0px,0px;
+    /*padding-top:9px;   留出9px给上面和下面的箭头
+    padding-bottom:9px;*/
+}
+QScrollBar::handle:horizontal
+{
+    width:20px;
+    background:rgba(75,185,208,30%);
+    border-radius:5px;   /*滚动条两端变成椭圆*/
+    min-height:20;
+}
+QScrollBar::handle:horizontal:hover
+{
+    width:20px;
+    background:rgba(75,185,208,100%);   /*鼠标放到滚动条上的时候，颜色变深*/
+    border-radius:4px;
+    min-height:20;
+}
+
+/*********************QScrollBar_vertical******************/
+QScrollBar:vertical
+{
+    width:20px;
+    background:rgba(255,255,255,30%);
+    margin:0px,0px,0px,0px;
+    /*padding-top:9px;   留出9px给上面和下面的箭头
+    padding-bottom:9px;*/
+}
+QScrollBar::handle:vertical
+{
+    width:20px;
+    background:rgba(75,185,208,30%);
+    border-radius:5px;   /*滚动条两端变成椭圆*/
+    min-height:20;
+}
+QScrollBar::handle:vertical:hover
+{
+    width:20px;
+    background:rgba(75,185,208,100%);   /*鼠标放到滚动条上的时候，颜色变深*/
+    border-radius:4px;
+    min-height:20;
+}
+
+
+/*********************QScrollArea******************/
+QWidget#sourceEditWidget,#sourceScrollArea,#scrollAreaWidgetContents{
+
+    /*background-color:transparent;//无效
+    border: 1px solid rgb(75,185,208);*/
+}
+
+/*********************QSplitter******************/
+QSplitter::handle {
+    background-color:rgba(132,133,135,100%);
+}
+
+QSplitter::handle:horizontal {
+    width: 3px;
+}
+
+QSplitter::handle:vertical {
+    height: 3px;
+}
+
+QSplitter::handle:pressed {
+    background-color:rgba(75,185,208,100%);
+}

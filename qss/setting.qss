@@ -1,0 +1,91 @@
+/*********************QPushBtton******************/
+QPushButton {
+    background-color: rgb(70,160,190);
+    border-radius: 3px;
+    color:rgb(255, 255, 255);
+    font: 75 10pt "Verdana";
+    border: none;
+}
+QPushButton:hover
+{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 rgb(78,185,208), stop: 1 rgb(78,185,208));
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 rgb(49,84,97), stop: 1 rgb(49,84,97));
+}
+
+
+/*********************QLabel******************/
+QLabel {
+        color:rgb(255, 255, 255);
+        font: 100 10pt "Verdana";
+}
+
+/*********************QLineEdit******************/
+
+QLineEdit{
+    border: 2px solid #4EB9D0;
+    border-radius: 1px;
+    background-color: rgb(35,39,49);
+    color:rgb(255, 255, 255);
+    font: 75 9pt "Verdana";
+}
+
+/*********************QTabWidget******************/
+QTabWidget:pane {
+        border-top:0px solid #e8f3f9;background:  transparent;
+}
+
+QTabBar::tab {
+
+    border: 2px solid rgb(75,185,208);
+    border-bottom-color: rgb(75,185,208); /* same as the pane color */
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    min-width: 8ex;
+    padding: 2px;
+    color:rgb(255, 255, 255);
+}
+
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 rgb(49,84,97), stop: 1 rgb(49,84,97));
+}
+
+QTabBar::tab:selected {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 rgb(78,185,208), stop: 1 rgb(78,185,208));
+
+
+}
+QTabBar::tab:!selected {
+    margin-top: 4px; /* make non-selected tabs look smaller */
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid rgb(78,185,208);
+    position: absolute;
+    top: -0.1em;
+}
+
+/*********************QGroupBox******************/
+QGroupBox {
+
+    border: 2px solid rgb(78,185,208);
+    border-radius: 5px;
+    margin-top: 1ex; /* leave space at the top for the title */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+    padding: 0 3px;
+    color:rgb(255, 255, 255);
+    font: 75 12pt "Verdana";
+}
